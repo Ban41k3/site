@@ -1,0 +1,53 @@
+.mainpage {
+    width: 100%;
+    height: auto;
+}
+
+.slider-wrapper {
+    margin: 20px auto;
+    width: 75%;
+    aspect-ratio: 3244 / 1288;
+    box-sizing: border-box;
+}
+
+.slider-line {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    left: 0%;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 0 10px -5px black;
+}
+
+.slider-line img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: 0;
+    transition: all 0.7s ease-in-out;
+}
+
+@media (max-width: 960px) {
+    .slider-wrapper {
+        width: 100%;
+        padding: 0;
+    }
+
+    .slider-line {
+        border-radius: unset;
+    }
+
+    .slider-line img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .slider-wrapper {
+        display: none;
+    }
+}
